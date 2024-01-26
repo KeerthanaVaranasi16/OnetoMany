@@ -10,26 +10,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Student = void 0;
-const typeorm_1 = require("typeorm");
-let Student = class Student {
-};
+var typeorm_1 = require("typeorm");
+var Student = /** @class */ (function () {
+    function Student() {
+    }
+    __decorate([
+        (0, typeorm_1.PrimaryGeneratedColumn)(),
+        __metadata("design:type", Number)
+    ], Student.prototype, "id", void 0);
+    __decorate([
+        (0, typeorm_1.Column)(),
+        __metadata("design:type", String)
+    ], Student.prototype, "rollNum", void 0);
+    __decorate([
+        (0, typeorm_1.Column)(),
+        __metadata("design:type", String)
+    ], Student.prototype, "firstName", void 0);
+    __decorate([
+        (0, typeorm_1.Column)(),
+        __metadata("design:type", String)
+    ], Student.prototype, "lastName", void 0);
+    Student = __decorate([
+        (0, typeorm_1.Entity)()
+    ], Student);
+    return Student;
+}());
 exports.Student = Student;
-__decorate([
-    (0, typeorm_1.PrimaryGeneratedColumn)(),
-    __metadata("design:type", Number)
-], Student.prototype, "id", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], Student.prototype, "rollNum", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], Student.prototype, "firstName", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], Student.prototype, "lastName", void 0);
-exports.Student = Student = __decorate([
-    (0, typeorm_1.Entity)()
-], Student);

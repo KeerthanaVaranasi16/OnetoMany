@@ -4,7 +4,6 @@ import express from "express"
 import dataSource from './DataSource/dataSource'
 import router from "./Routes/routes";
 
-
 const app=express();
 const port=3000;
 app.use(express.json())

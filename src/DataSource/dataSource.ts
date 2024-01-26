@@ -12,11 +12,11 @@ const dataSource = new DataSource({
     logging:true,
     synchronize:false,
     entities:[
-        // Users,
-        // Todo,
+        Users,
+        Todo,
         Student
     ],
-    migrations:["src/migrations/*.ts"]
+    migrations:["dist/src/migrations/*.js"]
 })
 
 export default dataSource;

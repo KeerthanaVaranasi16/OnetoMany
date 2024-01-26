@@ -41,7 +41,6 @@ router.post("/create", async function (req, res) {
   );
   res.json(savedUser);
 });
-
 router.put("/update/:userId", async function (req, res) {
   const userId = parseInt(req.params.userId);
   const updateData = req.body;
